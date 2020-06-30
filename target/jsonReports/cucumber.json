@@ -1,0 +1,85 @@
+[
+  {
+    "comments": [
+      {
+        "line": 1,
+        "value": "#language: pt"
+      }
+    ],
+    "line": 2,
+    "elements": [
+      {
+        "line": 17,
+        "name": "Deve inserir uma conta com sucesso",
+        "description": "",
+        "id": "programacao-sky;deve-inserir-uma-conta-com-sucesso;;2",
+        "type": "scenario",
+        "keyword": "Esquema do Cenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 19525240000,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "que acesso o site da sky https://www.sky.com.br/",
+            "match": {
+              "arguments": [
+                {
+                  "val": "https://www.sky.com.br/",
+                  "offset": 25
+                }
+              ],
+              "location": "Steps.AcessoSite(String)"
+            },
+            "matchedColumns": [
+              0
+            ],
+            "keyword": "Dado "
+          },
+          {
+            "result": {
+              "duration": 74413720600,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "clico no botao programacao",
+            "match": {
+              "location": "Steps.BotaoProgramacao()"
+            },
+            "keyword": "E "
+          },
+          {
+            "result": {
+              "duration": 7576352400,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "seleciono a programacao do horario",
+            "match": {
+              "location": "Steps.selecionoProgramacao()"
+            },
+            "keyword": "Quando "
+          },
+          {
+            "result": {
+              "duration": 7018691000,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "valido se o titulo for o mesmo",
+            "match": {
+              "location": "Steps.validacaoTitulo()"
+            },
+            "keyword": "Entao "
+          }
+        ]
+      }
+    ],
+    "name": "Programacao Sky",
+    "description": "\nComo um usuario\nGostaria de cadastrar contas\nPara que eu possa distribuir meu dinheiro de uma forma mais organizada",
+    "id": "programacao-sky",
+    "keyword": "Funcionalidade",
+    "uri": "src/test/resources/Sky.feature"
+  }
+]
